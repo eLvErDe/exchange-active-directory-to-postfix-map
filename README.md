@@ -8,8 +8,8 @@ There're exposed to backscattering (http://www.postfix.org/BACKSCATTER_README.ht
 
 In a few lines, what is backscattering:
 
-1. Spammers sends a forget email with random sender address to a random @corp.com recipient
-2. Your frontend accepts the emails because the recipient matches @corp.com
+1. Spammers sends a forged email with random sender address to a random @corp.com recipient
+2. Your frontend accepts the email because the recipient matches @corp.com
 3. The email gets forwarded to your Exchange server
 4. Exchange receives the email but random@corp.com is not a valid recipient
 5. Exchange issues a sender non-delivery notification to the orginal forged sender address
@@ -33,10 +33,10 @@ valid and then use this list to reject invalid users.
 
 <h2>The script</h2>
 
-This project is a Python script that connects to Active Directory using LDAP protocol and extract from their every email address found in Exchange related attributes.
-Then we'll turn this into a Postfix map and use it a whitelist for "smtpd_recipient_restrictions" postfix configuration setting.
+This project is a Python3 script that connects to Active Directory using LDAP protocol and extracts from there every email address found in Exchange related attributes.
+Then it will turn this into a Postfix map and uses it as a whitelist for "smtpd_recipient_restrictions" postfix configuration setting.
 
-I inluded some comments to configure postfix as well as like a very safe cron job to update this map automatically.
+I included some comments to configure postfix as well as a very safe cron job to update this map automatically.
 
 Here is --help output:
 
