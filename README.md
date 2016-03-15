@@ -3,7 +3,7 @@ Cron script to export Exchange emails addresses from Active Directory to a Postf
 
 <h2>Fighting backscatter</h2>
 
-Why did I wrote this script ? Simple answer: most of Postfix frontends protecting email servers are badly configured.
+Why did I write this script ? Simple answer: most of Postfix frontends protecting email servers (Exchange :D) are badly configured.
 There're exposed to backscattering (http://www.postfix.org/BACKSCATTER_README.html) because of their domain-based configuration instead of recipient adresses.
 
 In a few lines, what is backscattering:
