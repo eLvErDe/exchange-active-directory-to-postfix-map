@@ -11,9 +11,6 @@
 #   check_recipient_access hash:/etc/postfix/exchange_recipients,
 #   reject
 
-# Suggestion of "cron.hourly" script
-
-
 import sys
 import signal
 from itertools import chain
