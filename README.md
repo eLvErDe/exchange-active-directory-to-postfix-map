@@ -7,6 +7,7 @@ Why did I write this script ? Simple answer: most of Postfix frontends protectin
 There're exposed to backscattering (http://www.postfix.org/BACKSCATTER_README.html) because of their domain-based configuration instead of recipient adresses.
 
 In a few lines, what is backscattering:
+
 1. Spammers sends a forget email with random sender address to a random @corp.com recipient
 2. Your frontend accepts the emails because the recipient matches @corp.com
 3. The email gets forwarded to your Exchange server
