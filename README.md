@@ -35,7 +35,7 @@ valid and then use this list to reject invalid users.
 This project is a Python script that connects to Active Directory using LDAP protocol and extract from their every email address found in Exchange related attributes.
 Then we'll turn this into a Postfix map and use it a whitelist for "smtpd_recipient_restrictions" postfix configuration setting.
 
-I inluded some comments like a very safe cron job to update this map automatically in the comments
+I inluded some comments to configure postfix as well as like a very safe cron job to update this map automatically.
 
 Here is --help output:
 
