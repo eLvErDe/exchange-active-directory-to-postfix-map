@@ -79,7 +79,7 @@ optional arguments:
 Email starting with '#' will be considered as comment by Postfix (yes Exchange allows this crap...).
 I haven't been able to found a way to get Postfix recognize theses addresses, no success with quotes, backslashes....
 
-Exclude pattern is picky: I do a simple str.loyer()-in-str.lower() test so whitespaces must match exactly.
-If someone knows an easy way to compare DNs... All I found for ldap3 modules is this: http://ldap3.readthedocs.org/ldap3.utils.dn.html but it's pretty un-documented and all the try I gave failed.
+Exclude pattern is picky: I do a simple str.lower()-in-str.lower() test so whitespaces must match exactly.
+If someone knows an easy way to compare LDAP DNs... All I found for ldap3 modules is this: http://ldap3.readthedocs.org/ldap3.utils.dn.html but it's pretty un-documented and all the try I gave failed.
 
 There's no SSL/TLS support for LDAP connection, but it's trivial to add if needed.
